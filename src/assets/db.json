@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user2",
+      "password": "password2"
+    },
+    {
+      "id": 2,
+      "username": "user3",
+      "password": "password3"
+    },
+    {
+      "id": 3,
+      "username": "user4",
+      "password": "password4"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "sunt aut facere repellat provident reprehenderit",
+      "content": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "qui est esse",
+      "content": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque",
+      "authorId": 2
+    },
+    {
+      "id": 3,
+      "title": "ea molestias quasi exercitationem",
+      "content": "et iusto veniam et illum aut fuga\naccusamus quia eos aperiam necessitatibus odio",
+      "authorId": 3
+    }
+  ]
+}
