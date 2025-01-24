@@ -18,15 +18,9 @@
   ],
   "posts": [
     {
-      "id": "6c34",
-      "title": "wqeqw",
-      "content": "dsa",
-      "authorId": 1
-    },
-    {
-      "id": "5f9f",
-      "title": "asdas",
-      "content": "sada",
+      "id": "8708",
+      "title": "qwertyui",
+      "content": "qwertyuiop[\n",
       "authorId": 1
     }
   ],
@@ -66,66 +60,6 @@
       "postId": 3,
       "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
       "body": "doloribus at sed quis culpa deserunt consectetur odio aut doloribus quasi fugiat voluptas doloribus modi consectetur earum saepe"
-    },
-    {
-      "id": "aab7",
-      "postId": null,
-      "name": "hehehe",
-      "body": "hhahahahahhaha"
-    },
-    {
-      "id": "5c86",
-      "postId": null,
-      "name": "saad",
-      "body": "asssssssssssssssssss"
-    },
-    {
-      "id": "78a6",
-      "postId": "ad1",
-      "name": "ewsedfyguhjnkm",
-      "body": "zxdcfgvubhijnkmyuio"
-    },
-    {
-      "id": "ab08",
-      "postId": null,
-      "name": "qwertyuio",
-      "body": "asdfgh7654322345678765432"
-    },
-    {
-      "id": "48bd",
-      "postId": null,
-      "name": "qqqq",
-      "body": "qqqqq"
-    },
-    {
-      "id": "bf10",
-      "postId": "b5d5",
-      "name": "saad",
-      "body": "asdfghjk"
-    },
-    {
-      "id": "dbd0",
-      "postId": null,
-      "name": "saad",
-      "body": "qwertyuiop"
-    },
-    {
-      "id": "bade",
-      "postId": "6c34",
-      "name": "saad",
-      "body": "asdj;'"
-    },
-    {
-      "id": "3346",
-      "postId": "5f9f",
-      "name": "asdasdqw",
-      "body": "sdasd"
-    },
-    {
-      "id": "a16d",
-      "postId": "5f9f",
-      "name": "saad",
-      "body": "qwertyu"
     }
   ]
 }
