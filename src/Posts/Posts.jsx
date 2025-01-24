@@ -15,7 +15,7 @@ const Posts = () => {
   const [editPostId, setEditPostId] = useState(null);
   const [editTitle, setEditTitle] = useState("");
   const [editContent, setEditContent] = useState("");
-  const [editCommentId, setEditCommentId] = useState("");
+  const [editCommentId, setEditCommentId] = useState(null);
   const [editName, setEditName] = useState("");
   const [editBody, setEditBody] = useState("");
   const [message, setMessage] = useState("");
@@ -156,6 +156,39 @@ const Posts = () => {
     setBody(comment.body);
   };
 
+  const handleSaveEditComment = async () => {
+    if (!editTitle.trim() || !editContent.trim()) {
+      setMessage("Title and content cannot be empty.");
+      return;
+    }
+
+    const updatedComment = {
+      name: editName,
+      body: editBody,
+    };
+
+    try {
+      await axios.put(
+        `http://localhost:3000/comments/${editCommentId}`,
+        updatedComment
+      );
+      setComments(
+        comments.map((cmnt) => {
+          cmnt.id === editCommentId
+            ? { ...cmnt, name: editName, body: editBody }
+            : cmnt;
+        })
+      );
+      setEditCommentId(null);
+      setEditBody("");
+      setEditName("");
+      setMessage("Comment updated successfully!");
+    } catch (error) {
+      console.error("Error updating Comment:", error);
+      setMessage("Error updating Comment. Please try again.");
+    }
+  };
+
   return (
     <div className="container">
       <h2 className="header">User {userId}'s Posts</h2>
@@ -213,25 +246,52 @@ const Posts = () => {
             <h4>Comments</h4>
             {comments
               .filter((comment) => comment.postId === post.id)
-              .map((comment) => (
-                <div className="comment" key={comment.id}>
-                  <p>
-                    <strong>{comment.name}:</strong> {comment.body}
-                  </p>
-                  <button
-                    className="edit-button"
-                    onClick={() => handleEditComment(comment)}
-                  >
-                    Edit Comment
-                  </button>
-                  <button
-                    className="delete-button"
-                    onClick={() => handleDeleteComment(comment.id)}
-                  >
-                    Delete Comment
-                  </button>
-                </div>
-              ))}
+              .map((comment) => {
+                editCommentId === comment.id ? (
+                  <div className="edit-section">
+                    <input
+                      type="text"
+                      placeholder="Edit Name"
+                      value={editName}
+                      onChange={(e) => setEditName(e.target.value)}
+                      className="input"
+                    />
+                    <textarea
+                      placeholder="Edit Content"
+                      value={editBody}
+                      onChange={(e) => setEditBody(e.target.value)}
+                      className="textarea"
+                    />
+                    <button className="save-button" onClick={handleEditComment}>
+                      Save
+                    </button>
+                    <button
+                      className="cancel-button"
+                      onClick={() => setEditCommentId(null)}
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                ) : (
+                  <div className="comment" key={comment.id}>
+                    <p>
+                      <strong>{comment.name}:</strong> {comment.body}
+                    </p>
+                    <button
+                      className="edit-button"
+                      onClick={() => handleEditComment(comment)}
+                    >
+                      Edit Comment
+                    </button>
+                    <button
+                      className="delete-button"
+                      onClick={() => handleDeleteComment(comment.id)}
+                    >
+                      Delete Comment
+                    </button>
+                  </div>
+                );
+              })}
           </div>
         </div>
       ))}
