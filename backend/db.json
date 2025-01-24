@@ -22,6 +22,12 @@
       "title": "wqeqw",
       "content": "dsa",
       "authorId": 1
+    },
+    {
+      "id": "5f9f",
+      "title": "asdas",
+      "content": "sada",
+      "authorId": 1
     }
   ],
   "comments": [
@@ -102,6 +108,24 @@
       "postId": null,
       "name": "saad",
       "body": "qwertyuiop"
+    },
+    {
+      "id": "bade",
+      "postId": "6c34",
+      "name": "saad",
+      "body": "asdj;'"
+    },
+    {
+      "id": "3346",
+      "postId": "5f9f",
+      "name": "asdasdqw",
+      "body": "sdasd"
+    },
+    {
+      "id": "a16d",
+      "postId": "5f9f",
+      "name": "saad",
+      "body": "qwertyu"
     }
   ]
 }
