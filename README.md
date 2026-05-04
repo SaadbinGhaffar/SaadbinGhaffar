@@ -4,7 +4,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c6ff,100:0072ff&height=200&section=header&text=Muhammad%20Saad&fontSize=42&fontColor=ffffff" />
 </p>
 
-<h1 align="center">Muhammad Saad 👋</h1>
+
 <h3 align="center">Full Stack Developer | React Native | MERN | Supabase | AI Integrations</h3>
 
 ---
