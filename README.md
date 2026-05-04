@@ -1,5 +1,5 @@
-<h1 align="center">Hi, I'm Saad 👋</h1>
-<h3 align="center">Full Stack AI Developer · React Native Specialist · 3+ Years of Shipping Real Products</h3>
+<h1 align="center">Hi, I'm [Your Name] 👋</h1>
+<h3 align="center">Full Stack AI Developer · React Native Specialist · 20+ Years of Shipping Real Products</h3>
 
 <p align="center">
   I design and build AI-powered mobile and web applications — from idea to production.<br/>
